@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recuperación de Contraseña</title>
+
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="./css/stylem.css" />
+  </head>
+  <body class="bg-gray-300 h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-800 text-white p-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0"
+      >
+        <!-- Botón del menú móvil (esquina superior izquierda, solo en móvil) -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-white focus:outline-none absolute left-4 top-8"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+
+        <!-- Logo y título -->
+        <div class="flex items-center space-x-4">
+          <img
+            id="logo"
+            src="./images/icons/Logo Bankzar.png"
+            class="h-12 rounded-md border"
+          />
+          <h1 id="titulo" class="text-2xl font-bold font-serif">Bankzar</h1>
+        </div>
+
+        <!-- Menú de navegación para escritorio (oculto en móvil) -->
+        <nav id="navegacion" class="hidden md:block">
+          <ul class="flex space-x-4 mt-2 mb-2">
+            <li>
+              <a
+                href="index.html"
+                class="hover:text-black hover:bg-white bg-gray-900 p-4 rounded-2xl font-mono"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                href="catalago.html"
+                class="hover:text-black hover:bg-white bg-gray-900 p-4 rounded-2xl font-mono"
+                >Catálogo</a
+              >
+            </li>
+            <li>
+              <a
+                href="contacto.html"
+                class="hover:text-black hover:bg-white bg-gray-900 p-4 rounded-2xl font-mono"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Icono de iniciar sesión (esquina superior derecha, solo en móvil) -->
+        <a
+          href="login.html"
+          class="md:hidden text-white absolute right-4 top-8"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Menú de navegación para móvil (oculto por defecto y posicionado debajo del botón) -->
+      <nav
+        id="mobile-menu"
+        class="md:hidden absolute top-18 left-0 bg-gray-600 w-full z-10 hidden"
+      >
+        <ul class="flex flex-col space-y-2 p-4">
+          <li>
+            <a
+              href="index.html"
+              class="block text-center hover:text-black hover:bg-white bg-gray-900 p-2 rounded-2xl font-mono"
+              >Inicio</a
+            >
+          </li>
+          <li>
+            <a
+              href="catalago.html"
+              class="block text-center hover:text-black hover:bg-white bg-gray-900 p-2 rounded-2xl font-mono"
+              >Catálogo</a
+            >
+          </li>
+          <li>
+            <a
+              href="contacto.html"
+              class="block text-center hover:text-black hover:bg-white bg-gray-900 p-2 rounded-2xl font-mono"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container[center] p-6 py-6">
+      <div
+        class="bg-white mx-auto rounded-2xl border-2 place-items-center max-w-7xl"
+      >
+        <h2 class="font-bold text-2xl text-center p-4">Preguntas frecuentes</h2>
+        <p class="p-2"></p>
+        <section class="user-content pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <hr />
+                <p>
+                  <strong
+                    >¿Qué formas de pago puedo utilizar para realizar mi
+                    compra?<br /></strong
+                  ><span style="text-decoration: underline">Efectivo:</span>
+                  Realiza el pago mediante OXXO. El pago tarda de 1 a 2 días
+                  hábiles en reflejarse. La transacción es a través de la
+                  plataforma de Mercadopago.<br /><span
+                    style="text-decoration: underline"
+                    >Tarjeta de débito o crédito:</span
+                  >
+                  La transacción es a través de la plataforma de Mercadopago y/o
+                  Paypal.<br /><span style="text-decoration: underline"
+                    >Depósito o transferencia:</span
+                  >
+                  Puedes realizar el depósito en OXXO o alguna otra tienda de
+                  conveniencia, así como ventanilla o practicaja de BBVA
+                  Bancomer. La transferencia la puedes realizar a través de la
+                  aplicación de tu banco.<br /><span
+                    style="text-decoration: underline"
+                    >Paypal:</span
+                  >
+                  Paga con tarjeta de débito o crédito a través de la
+                  plataforma. Necesitas tener una cuenta para utilizar este
+                  medio.<br /><span style="text-decoration: underline"
+                    >Mercadopago:</span
+                  >
+                  Paga con saldo, tarjeta de débito o crédito a través de la
+                  plataforma. Necesitas tener una cuenta para utilizar este
+                  método.
+                </p>
+                <hr />
+                <p>
+                  <strong>¿Cuál es el costo de envío?<br /></strong>El envío
+                  cuesta $80 por Correos de México, y tiene cobertura a todo el
+                  país. Por DHL/Estafeta cuesta a partir de $150 el envío
+                  regular y $170 el envío express. Estos pueden aumentar según
+                  el Código Postal. Puedes cotizar directamente en el carrito o
+                  checkout.
+                </p>
+                <hr />
+                <p>
+                  <strong>¿Cómo se realizan los envíos?<br /></strong>Enviamos
+                  los paquetes vía Correos de México y Estafeta/DHL.
+                  Empaquetamos cada pedido con la dedicación que pondríamos en
+                  un regalo especial, asegurándonos de que llegue en perfecto
+                  estado y listo para que luzcas tu outfit.
+                </p>
+                <hr />
+                <p>
+                  <strong>¿Dónde puedo recibir mi pedido?<br /></strong
+                  >Realizamos envíos a todo México. Para pedidos locales,
+                  generalmente entregamos en linas del tren ligero L1, L2, L3, o
+                  en Forum o Tlaquepaque centro. También podemos mandar tu
+                  pedido a cualquier sucursal de la paquetería Casa Blanca, que
+                  cuenta con varias sucursales en la ZMG.
+                </p>
+                <hr />
+                <p>
+                  <strong>¿Cuánto tarda en llegar el pedido?<br /></strong>Una
+                  vez que confirmemos el pago, enviaremos tu paquete el día
+                  lunes, miércoles o viernes posterior a tu pago.<br />Los
+                  envíos por Correos de México tardan de 5 a 15 días hábiles,
+                  con Estafeta/DHL regular tardan de 2 a 5 días hábiles, y
+                  Estafeta/DHL express de 1 a 2 días hábiles. Cualquier opción
+                  puede tardar más de acuerdo a la cobertura y temporada en que
+                  se realiza el envío.
+                </p>
+                <hr />
+                <p>
+                  <strong
+                    >¿Cuál es el proceso para realizar un cambio o una
+                    devolución?<br /></strong
+                  >No contamos con políticas de cambios ni devoluciones, sin
+                  embargo, siempre estamos abiertos al diálogo y a ofrecer
+                  alguna resolución de cualquier tipo de inconveniente
+                  particular, ya que cada caso es distinto.<br />Ya sea que tu
+                  prenda tenga algún defecto en detalle no especificado, daños
+                  por manejo de paqueterías, o cualquier otra cosa que no te
+                  deje disfrutar tu prenda o no te tenga satisfecho, puedes
+                  escribirnos directamente para atender el caso y encontrar una
+                  resolución a la breveedad posible.
+                </p>
+                <hr />
+                <hr />
+                <p>
+                  Te recordamos que cualquier duda o comentario, puedes usar
+                  nuestros canales para comunicarte con nosotros:<br /><span
+                    style="text-decoration: underline; color: #236fa1"
+                    ><strong
+                      ><a
+                        style="color: #236fa1; text-decoration: underline"
+                        href="https://instagram.com/viniles.tapatios"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        >Instagram</a
+                      ></strong
+                    ></span
+                  ><br /><span
+                    style="text-decoration: underline; color: #236fa1"
+                    ><strong
+                      ><a
+                        style="color: #236fa1; text-decoration: underline"
+                        href="https://www.facebook.com/viniles.tapatios"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        >Facebook</a
+                      ></strong
+                    ></span
+                  ><br /><span
+                    style="text-decoration: underline; color: #236fa1"
+                    ><strong
+                      ><a
+                        style="color: #236fa1; text-decoration: underline"
+                        href="https://api.whatsapp.com/send/?phone=523311850561"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        >Whatsapp</a
+                      ></strong
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <section id="more" class="bg-gray-600 text-white py-8">
+      <div class="container mx-auto px-4">
+        <!-- Sección de "Más Información" -->
+        <div class="mb-8">
+          <h3 class="text-2xl font-bold text-center mb-4 text-blue-950">
+            Más Información
+          </h3>
+          <div class="flex flex-col space-y-2 items-center">
+            <a href="como-comprar.html" class="hover:text-gray-300"
+              >Cómo comprar</a
+            >
+            <hr class="w-16 border-gray-500" />
+            <a href="preguntas-frecuentes.html" class="hover:text-gray-300"
+              >Preguntas frecuentes</a
+            >
+            <hr class="w-16 border-gray-500" />
+            <a href="contacto.html" class="hover:text-gray-300">Contacto</a>
+            <hr class="w-16 border-gray-500" />
+            <a href="aviso-de-privacidad.html" class="hover:text-gray-300"
+              >Aviso de Privacidad</a
+            >
+          </div>
+        </div>
+
+        <!-- Sección de redes sociales -->
+        <div class="mb-8">
+          <div class="flex justify-center space-x-6">
+            <a href="#" class="hover:text-gray-300">
+              <img src="./images/icons/fb.svg" alt="Facebook" class="w-8 h-8" />
+            </a>
+            <a
+              href="https://www.instagram.com/bankzarcode/"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="./images/icons/ig_icon.svg"
+                alt="Instagram"
+                class="w-8 h-8"
+              />
+            </a>
+            <a href="#" class="hover:text-gray-300">
+              <img
+                src="./images/icons/tik-tok.png"
+                alt="TikTok"
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Sección de métodos de pago -->
+        <div>
+          <h3 class="text-2xl font-bold text-center mb-4 text-blue-950">
+            Métodos de Pago
+          </h3>
+          <div class="flex justify-center space-x-6">
+            <img src="./images/payment/visa.png" alt="Visa" class="w-8 h-6" />
+            <img
+              src="./images/payment/mas.png"
+              alt="Mastercard"
+              class="w-8 h-6"
+            />
+            <img
+              src="./images/payment/ame.png"
+              alt="american"
+              class="w-8 h-6"
+            />
+            <img src="./images/payment/oxo.png" alt="OXXO" class="w-8 h-6" />
+            <img src="./images/payment/other.png" alt="MELI" class="w-8 h-6" />
+            <img
+              src="./images/payment/visadebit@2x.png"
+              alt="Visa debito"
+              class="w-8 h-6"
+            />
+            <img
+              src="./images/payment/maestro@2x.png"
+              alt="maestro"
+              class="w-8 h-6"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center p-4">
+      <p>&copy; 2025 Bankzar</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/scroll.js"></script>
+  </body>
+</html>
