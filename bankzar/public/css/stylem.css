@@ -1,0 +1,41 @@
+/* Estilos para el menú móvil cuando se abre */
+.menu-open {
+  transform: translateY(0); /* Menú aparece */
+  opacity: 1;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.menu-closed {
+  transform: translateY(-100%); /* Menú oculto */
+  opacity: 0;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+/* Estilos para el header y los enlaces cuando el scroll pase de 100px */
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 1s ease;
+}
+
+.smaller-header {
+  background-color: rgba(31, 41, 55, 0.8); /* Fondo semitransparente */
+  padding: 8px; /* Reduce el padding */
+}
+
+.smaller-header img {
+  height: 40px; /* Reducir el tamaño del logo */
+}
+
+.smaller-header h1 {
+  font-size: 1.25rem; /* Reducir tamaño del título */
+}
+
+.smaller-header nav a {
+  /* Reducir tamaño de los botones del menú */
+  /* Reducir el tamaño de la fuente */
+  transition: all 1s ease;
+}
