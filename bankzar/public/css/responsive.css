@@ -1,0 +1,130 @@
+/* RESPONSIVE DESIGN */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 1024px) {
+  .servicios {
+    gap: 15px;
+    width: 100%;
+  }
+
+  .prendas {
+    width: 220px;
+  }
+
+  .prendaParrafo {
+    font-size: 0.85rem;
+  }
+}
+
+/* Celulares grandes (pantallas entre 600px y 768px) */
+@media (max-width: 768px) {
+  .servicios {
+    width: 50%;
+    border: 2px solid #0628eb;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .prendas {
+    width: 80%;
+    max-width: 280px;
+  }
+
+  .prendaParrafo {
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares pequeños (menos de 600px) */
+@media (max-width: 639px) {
+  .seccion_inicio {
+  }
+
+  .servicios {
+    max-width: 25%;
+  }
+
+  .contenedor_Ilustrativo {
+    padding: 15px;
+    gap: 15px;
+    width: 40%;
+  }
+
+  .prendas {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 585px) {
+  .seccion_inicio {
+    width: 100%;
+  }
+
+  .servicios {
+    max-width: 22%;
+  }
+
+  .prendas {
+    width: 75%;
+  }
+}
+
+@media (max-width: 515px) {
+  .servicios {
+    width: 20%;
+  }
+}
+
+@media (max-width: 467px) {
+  .servicios {
+    width: 18%;
+  }
+  .contenedor_Ilustrativo {
+    width: auto;
+  }
+}
+
+@media (max-width: 449px) {
+  .servicios {
+    width: 15%;
+    gap: 35px;
+  }
+
+  .contenedor_Ilustrativo {
+    width: auto;
+    gap: 35px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .servicios {
+    margin-top: 40px;
+    gap: px;
+    width: 190px;
+  }
+
+  .contenedor_Ilustrativo {
+    margin-top: 20px;
+    gap: 10px;
+    height: 80%;
+  }
+
+  .contenedor_Ilustrativo {
+    height: 900px;
+  }
+
+  .prendas {
+    overflow: hidden;
+    height: 145px;
+  }
+}
+
+@media (max-width: 365px) {
+}
